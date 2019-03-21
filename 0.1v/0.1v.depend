@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1553205859 source:c:\users\deimukas\documents\github\dar-nezinau\0.1v\main.cpp
+	<iostream>
+	<vector>
+	<iomanip>
+
