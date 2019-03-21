@@ -19,11 +19,11 @@ int main()
     k1.vardas="ggffdf";
     k1.pavarde="erwerewrw";
     k1.egz=8;
-    for (int i=0; i<5; i++){
+    for (int i=0; j!=0; i++){
             cout<<"Iveskite paz.: ";
             cin>>j;
-        k1.paz.push_back(j);
-        sum=sum+j;
+         if (j!=0 && j<11){ k1.paz.push_back(j);
+                sum=sum+j;}
     }
     k1.vid=sum/k1.paz.size();
     k1.rezultatas=0.3*k1.vid+0.7*k1.egz;
