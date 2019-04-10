@@ -15,7 +15,9 @@ struct student
 
 int main()
 {
-    student studentu[2];
+
+
+   student studentu[2];
 for(int r = 0; r <2; r++)
     {
         int vardo_ilgis;
@@ -160,7 +162,7 @@ else
                 pazymys1 = stoi( input );
             }
          suma+=pazymys1;
-            }
+
               studentu[r].vidurkis = suma/pazymys;
 
 
@@ -168,70 +170,128 @@ else
          cout << "Iveskite egzamino pazymi: ";
          cin >> input;
 
-         while (input.find_first_not_of( "0123456789" ) != string::npos)
-            {
-                cout << endl << "Blogai ivestas egzamino pazymys" << endl << endl;
-                cout << "Bandykite dar karta ivesti pazymi: ";
-                cin >> input;
-            }
+while (input.find_first_not_of( "0123456789" ) != string::npos)
+    {
+        cout << endl << "Blogai ivestas egzamino pazymys" << endl << endl;
+        cout << "Bandykite dar karta ivesti pazymi: ";
+        cin >> input;
+    }
 
          double egzaminas = stoi( input );
 
-         while ( egzaminas < 1 || egzaminas > 10 )
-            {
-                cout << endl << "Blogai ivestas egzamino pazymys" << endl << endl;
-                cout << "Bandykite dar karta ivesti pazymi: ";
-                cin >> input;
-                egzaminas = stoi( input );
+while ( egzaminas < 1 || egzaminas > 10 )
+{
+    cout << endl << "Blogai ivestas egzamino pazymys" << endl << endl;
+    cout << "Bandykite dar karta ivesti pazymi: ";
+    cin >> input;
+    egzaminas = stoi( input );
 
-         while (input.find_first_not_of( "0123456789" ) != string::npos)
-            {
-                cout << "Blogai ivestas egzamino pazymys" << endl;
-                cout << "Bandykite dar karta ivesti pazymi: ";
-                cin >> input;
-            }
+while (input.find_first_not_of( "0123456789" ) != string::npos)
+{
+    cout << "Blogai ivestas egzamino pazymys" << endl;
+    cout << "Bandykite dar karta ivesti pazymi: ";
+    cin >> input;
+}
                 egzaminas  = stoi( input );
+    if ( (pazymys % 2) && r == (( pazymys / 2 + 1 )*1.0))
+    {
+    studentu[r].mediana = pazymys1;
+    }
+else if ( !( pazymys % 2 ) && ( i == ( pazymys / 2 ) || r == ( pazymys / 2 + 1 ) ) ) {
+studentu[r].mediana += pazymys1;
+}
+suma+=pazymys1;
+}
+if ( !( pazymys % 2 ) )
+{
+studentu[ r ].mediana /= 2;
+}
+
+studentu[r].egzas = egzaminas;
+cout << endl;
             }
 
-          studentu[r].egzas = egzaminas;
-         cout << endl;
     }
+char uzklausa;
 
+cout << "Ar norite medianos? (T-norite ar simbolis-nenorite): ";
+cin >> uzklausa;
 
+if ( uzklausa == 'T' || uzklausa== 't' )
+{
 cout << "Vardas";
 cout.width(20);
 cout << "Pavarde";
 cout.width(15);
 cout << "";
-cout << "Galutinis (Vid.)" << endl;
+cout << "Galutinis (Med.)" << endl;
 cout.fill('-');
 cout.width(58);
 cout << " " << endl;
 cout.fill(' ');
 cout.width(58);
-
 double galutinis = 0;
+for ( int studentusk = 0; studentusk < 3; studentusk++)
+{
+cout.width(17);
+cout << left <<  studentu[studentusk].vardas << " ";
+galutinis = 0.6 *  studentu[ studentusk ].egzas + 0.4* studentu[studentusk].mediana;
+if(galutinis == 10)
+{
+cout.width(33);
+cout << left <<  studentu[studentusk].pavarde << " ";
+cout.width(0);
+cout << right << fixed << setprecision( 2 ) << galutinis << endl;
+}
+else
+{
+cout.width(34);
+cout << left <<  studentu[studentusk].pavarde << " ";
+cout.width(0);
+cout << right << fixed << setprecision( 2 ) << galutinis << endl;
+}
+}
+
+}
+
+else
+    {
+    cout << "Vardas";
+    cout.width(20);
+    cout << "Pavarde";
+    cout.width(15);
+    cout << "";
+    cout << "Galutinis (Vid.)" << endl;
+    cout.fill('-');
+    cout.width(58);
+    cout << " " << endl;
+    cout.fill(' ');
+    cout.width(58);
+    cout << endl;
+
+double ne_med = 0;
 
 for ( int studentusk = 0; studentusk < 3; studentusk++)
     {
-         cout.width(17); cout << left <<  studentu[studentusk].vardas << " ";
-         galutinis = 0.6 *  studentu[ studentusk ].egzas + 0.4* studentu[studentusk].vidurkis;
-         if(galutinis == 10)
-            {
-                cout.width(33); cout << left <<  studentu[studentusk].pavarde << " ";
-                cout.width(0); cout << right << fixed << setprecision( 2 ) << galutinis << endl;
-            }
-             else
-            {
-                cout.width(34); cout << left <<  studentu[studentusk].pavarde << " ";
-                cout.width(0); cout << right << fixed << setprecision( 2 ) << galutinis << endl;
-            }
+    cout.width(17);
+    cout << left <<  studentu[studentusk].vardas << " ";
+    ne_med = 0.6 *  studentu[ studentusk ].egzas + 0.4* studentu[studentusk].vidurkis;
+    if(ne_med == 10)
+    {
+    cout.width(33);
+    cout << left <<  studentu[studentusk].pavarde << " ";
+    cout.width(0);
+    cout << right << fixed << setprecision( 2 ) << ne_med << endl;
     }
-
-
+    else
+    {
+    cout.width(34);
+    cout << left <<  studentu[studentusk].pavarde << " ";
+    cout.width(0);
+    cout << right << fixed << setprecision( 2 ) << ne_med << endl;
+    }
+    }
+    }
 return 0;
 }
-
-
-
 
