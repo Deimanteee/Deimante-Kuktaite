@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1556395153 source:z:\deimantei\main.cpp
-	<iostream>
-	<string>
-	<iomanip>
-	<vector>
-	<fstream>
-	<algorithm>
-
