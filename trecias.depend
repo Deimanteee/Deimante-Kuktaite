@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1556387293 source:z:\deimantei\main.cpp
-	<iostream>
-	<conio.h>
-	<string>
-	<iomanip>
-	<vector>
-
