@@ -1,9 +1,70 @@
 # depslib dependency file v1.0
-1556395153 source:z:\deimantei\main.cpp
+1554785546 source:z:\mano\isvedimas.cpp
+	"Studentas.h"
 	<iostream>
-	<string>
 	<iomanip>
 	<vector>
-	<fstream>
 	<algorithm>
+
+1556398089 z:\mano\studentas.h
+	<string>
+	<vector>
+	<iostream>
+
+1556398043 source:z:\mano\ivedimas.cpp
+	<string>
+	<vector>
+	<fstream>
+	<iostream>
+
+1556396895 source:z:\mano\main.cpp
+	"Studentas.h"
+	"Ivedimas.h"
+	"Isvedimas.h"
+	<vector>
+
+1556398087 z:\mano\ivedimas.h
+	"Studentas.h"
+	<string>
+	<vector>
+	<fstream>
+
+1556398316 z:\mano\isvedimas.h
+	"Studentas.h"
+	<vector>
+
+1556398783 source:c:\users\deimukas\desktop\lab c++\v0.3\ivedimas.cpp
+	<string>
+	<vector>
+	<fstream>
+	<iostream>
+
+1559137140 source:c:\users\deimukas\desktop\lab c++\v0.3\isvedimas.cpp
+	"Isvedimas.h"
+	"Studentas.h"
+	<iostream>
+	<iomanip>
+	<vector>
+	<algorithm>
+
+1556399099 c:\users\deimukas\desktop\lab c++\v0.3\isvedimas.h
+	"Studentas.h"
+	<vector>
+
+1556398796 c:\users\deimukas\desktop\lab c++\v0.3\studentas.h
+	<string>
+	<vector>
+	<iostream>
+
+1559153355 source:c:\users\deimukas\desktop\lab c++\v0.3\main.cpp
+	"Studentas.h"
+	"Ivedimas.h"
+	"Isvedimas.h"
+	<vector>
+
+1556398843 c:\users\deimukas\desktop\lab c++\v0.3\ivedimas.h
+	"Studentas.h"
+	<string>
+	<vector>
+	<fstream>
 

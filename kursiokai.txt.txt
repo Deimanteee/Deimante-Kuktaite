@@ -1,0 +1,5 @@
+Vardas    Psvarde       ND1 ND2 ND3  Egzaminas
+Jonas     Petraitis       10  9   7      10
+Kamile    Rimkute         9   6   5      9
+Kotryna   Kostiukaite     5   4   9      2
+Gustas    Marozas         8   7   2      7

@@ -1,3 +1,4 @@
+
 #include "Studentas.h"
 #include "Ivedimas.h"
 #include "Isvedimas.h"
@@ -9,7 +10,6 @@ int main() {
     vector <Studentas> k;
     Ivedimas( k );
     Isvedimas( k );
-    system("pause");
-    return 0;
 
+    return 0;
 }
