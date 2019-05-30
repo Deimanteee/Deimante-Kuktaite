@@ -1,7 +1,6 @@
 
-#include "Studentas.h"
-#include "Ivedimas.h"
-#include "Isvedimas.h"
+#include "headeris2.h"
+#include "headeris1.h"
 #include <vector>
 
 using namespace std;
