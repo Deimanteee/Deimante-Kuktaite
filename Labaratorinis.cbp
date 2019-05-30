@@ -33,10 +33,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Isvedimas.cpp" />
-		<Unit filename="Isvedimas.h" />
 		<Unit filename="Ivedimas.cpp" />
-		<Unit filename="Studentas.h" />
-		<Unit filename="fail.txt" />
+		<Unit filename="headeris1.h" />
+		<Unit filename="headeris2.h" />
+		<Unit filename="kursiokai.txt.txt" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
